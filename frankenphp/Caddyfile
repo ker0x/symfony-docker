@@ -25,6 +25,8 @@
 	encode zstd br gzip
 
 	mercure {
+		# Share the hub between the addresses listed in SERVER_NAME (e.g. "localhost, php:80")
+		name default
 		# Trusted issuer: binds the iss claim access tokens must carry to its keys.
 		# In production, set MERCURE_TRUSTED_ISSUERS to the stable identifier of your token issuer
 		# (your app's URL for self-issued tokens).
